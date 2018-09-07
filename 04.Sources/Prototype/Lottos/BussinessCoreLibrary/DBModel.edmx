@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LotodbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblKetqua">
+          <Key>
+            <PropertyRef Name="NgayMoThuong" />
+          </Key>
+          <Property Name="NgayMoThuong" Type="date" Nullable="false" />
+          <Property Name="G0" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G1" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G21" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G22" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G31" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G32" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G33" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G34" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G35" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G36" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G41" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G42" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G43" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G44" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G51" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G52" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G53" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G54" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G55" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G56" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G61" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G62" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G63" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G71" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G72" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G73" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="G74" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Pwd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="LotodbModelStoreContainer">
+          <EntitySet Name="tblKetqua" EntityType="Self.tblKetqua" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LotodbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="LotodbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+          <EntitySet Name="tblKetquas" EntityType="LotodbModel.tblKetqua" />
+        </EntityContainer>
+        <EntityType Name="tblKetqua">
+          <Key>
+            <PropertyRef Name="CreateDate" />
+            <PropertyRef Name="NgayMoThuong" />
+          </Key>
+          <Property Name="G0" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G1" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G21" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G22" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G31" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G32" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G33" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G34" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G35" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G36" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G41" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G42" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G43" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G44" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G51" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G52" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G53" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G54" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G55" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G56" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G61" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G62" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G63" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G71" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G72" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G73" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="G74" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NgayMoThuong" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LotodbModelStoreContainer" CdmEntityContainer="LotodbEntities">
+          <EntitySetMapping Name="tblUsers">
+            <EntityTypeMapping TypeName="LotodbModel.tblUser">
+              <MappingFragment StoreEntitySet="tblUser">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKetquas">
+            <EntityTypeMapping TypeName="LotodbModel.tblKetqua">
+              <MappingFragment StoreEntitySet="tblKetqua">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="NgayMoThuong" ColumnName="NgayMoThuong" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="G74" ColumnName="G74" />
+                <ScalarProperty Name="G73" ColumnName="G73" />
+                <ScalarProperty Name="G72" ColumnName="G72" />
+                <ScalarProperty Name="G71" ColumnName="G71" />
+                <ScalarProperty Name="G63" ColumnName="G63" />
+                <ScalarProperty Name="G62" ColumnName="G62" />
+                <ScalarProperty Name="G61" ColumnName="G61" />
+                <ScalarProperty Name="G56" ColumnName="G56" />
+                <ScalarProperty Name="G55" ColumnName="G55" />
+                <ScalarProperty Name="G54" ColumnName="G54" />
+                <ScalarProperty Name="G53" ColumnName="G53" />
+                <ScalarProperty Name="G52" ColumnName="G52" />
+                <ScalarProperty Name="G51" ColumnName="G51" />
+                <ScalarProperty Name="G44" ColumnName="G44" />
+                <ScalarProperty Name="G43" ColumnName="G43" />
+                <ScalarProperty Name="G42" ColumnName="G42" />
+                <ScalarProperty Name="G41" ColumnName="G41" />
+                <ScalarProperty Name="G36" ColumnName="G36" />
+                <ScalarProperty Name="G35" ColumnName="G35" />
+                <ScalarProperty Name="G34" ColumnName="G34" />
+                <ScalarProperty Name="G33" ColumnName="G33" />
+                <ScalarProperty Name="G32" ColumnName="G32" />
+                <ScalarProperty Name="G31" ColumnName="G31" />
+                <ScalarProperty Name="G22" ColumnName="G22" />
+                <ScalarProperty Name="G21" ColumnName="G21" />
+                <ScalarProperty Name="G1" ColumnName="G1" />
+                <ScalarProperty Name="G0" ColumnName="G0" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

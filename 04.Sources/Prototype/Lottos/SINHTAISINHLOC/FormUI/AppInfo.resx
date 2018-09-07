@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Icon" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5JY29uAgAAAAhJY29uRGF0YQhJY29uU2l6ZQcEAhNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAIAAAAJAwAAAAX8////E1N5c3RlbS5EcmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgCAAAAAAAAAAAAAAAPAwAAAH4EAAACAAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wEAAAAbAAAAVQAAAHEAAABxAAAAVQAAABv///8B////Af///wH///8B////Af///wH///8B////AQAAAA0AAAB1AAAAywAAAK8AAACPAAAAjwAAAK8AAADLAAAAdQAAAA3///8B////Af///wH///8B////AQAAAA0AAACZAAAArwAAADUAAAAJ////Af///wEAAAAJAAAANwAAALEAAACZAAAADf///wH///8B////Af///wEAAAB3AAAAsQAAABn///8B////AQAAABEAAAAR////Af///wEAAAAZAAAAsQAAAHX///8B////Af///wEAAAAbAAAAywAAADf///8B////Af///wEAAABxAAAAcf///wH///8B////AQAAADcAAADLAAAAGf///wH///8BAAAAUQAAAK0AAAAJ////Af///wH///8BAAAAgQAAAIH///8B////Af///wEAAAAJAAAArwAAAFH///8B////AQAAAHMAAACN////Af///wH///8B////AQAAAIEAAACB////Af///wH///8B////AQAAAI8AAABx////Af///wEAAABzAAAAjf///wH///8B////Af///wEAAAB5AAAAef///wH///8B////Af///wEAAACNAAAAc////wH///8BAAAAUwAAAK0AAAAJ////Af///wH///8BAAAAFQAAABX///8B////Af///wEAAAAJAAAArQAAAFH///8B////AQAAABsAAADLAAAANf///wH///8B////AQAAAGUAAABl////Af///wH///8BAAAANwAAAMsAAAAZ////Af///wH///8BAAAAdwAAALEAAAAZ////Af///wEAAAARAAAAEf///wH///8BAAAAGQAAALEAAAB1////Af///wH///8B////AQAAAA0AAACZAAAArwAAADUAAAAJ////Af///wEAAAAJAAAANwAAALEAAACZAAAADf///wH///8B////Af///wH///8BAAAADQAAAHUAAADLAAAArwAAAI8AAACPAAAArwAAAMsAAAB1AAAADf///wH///8B////Af///wH///8B////Af///wH///8BAAAAGwAAAFUAAABxAAAAcQAAAFUAAAAb////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//ws=</value>
+  </data>
+  <data name="bunifuImageButton8.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAoAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAFQAAABUIBgAAAKkXpZYAAAAEZ0FNQQAAsY8L/GEFAAABV0lEQVQ4T9WUzUrDQBhFg+60iMX3UqQKglKE2o0/m2pBkFpBFyK4rrjyDfoALhQEX0XFFl9AjeemtwnBNAyIoAcO6XfzTZjMNBP9f+I4rmIb7/AFha6qD3DerWEwoI5DfMIeNnDV1yt8xgHWPaQcGrv4jic44zgH+Sye4gdeOC6GhibqgcuOSqGvhnpww1EebizgG3YdBUG/ZqylqjrKIDxEbUT6yvzewm2XCdQ7yl2qruArth1lED5iz2UC9T5+4q7rPdetpMFQX+ODywxCvfqmyxQyrbPW7dbXpm+lkOlfMXQ5gmAaNYNFRznI+yj6jnKQL6HGTzkaQTBpph3UDG987fhWCtn3mQrCX1nT8e5XHCkL2f05nLj7+tb1fzt3FAT9l6iHFp8F3FhHrVvNUSn0rbh/zVExNBxjyLd/5r4jx+XQGHpKbXhIGAwYn6f3+PPz9A8SRV+dXwuAt9iRvAAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="bunifuImageButton1.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAXgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEwAAABMIBgAAAHJQNswAAAAEZ0FNQQAAsY8L/GEFAAABFUlEQVQ4T72UQUrDQBhGU3sBazdFjXqF6kEKulC7KIjghYQinsJtFxVv07pXUVDi+6ZfxkDioKb44DHMN/8MmUkm2b9RFEUHt/HIbcdDP4dJOd7iAquof4O7Lk1D4Tk+4z0eY8/5Fp7gAz7haZjwHRSM8Q0vHTXC+JXrmhdkYA9fcOIoQF/ntqnWUYD+BWoHO46+IJzizN0I2QDFwFGEbI7X7q4g6OIjjhxFPHag1lGETGeql7LhKIT7KMJhVyHTFu/UOoqQ9VHkjkJ4iO9Y+47IUtvUeX7g0FEIU0+WWqzxyVJnllqsfmaCYD1vUxCu7zsTDOgGvGK7G1BCwRm2v5slFJZ/jSVW+d1fowqT2v/P/kaWfQL5xtVX2l52JQAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>                                                                                NHIỆM VỤ CỦA CHÚNG TÔI 
+   - Giúp bạn kết nối tới cộng đồng những người chơi xổ số thông minh
+   - Biến ước mơ của bạn thành hiện thực, có thêm nguồn thu tay trái, tỷ lệ lợi nhuận trên số vốn cao
+   - Đơn giản hóa việc trọn lọc số, nâng cao độ chuẩn xác, nâng cao tỷ lệ chiến thắng
+   - Hỗ trợ bạn mọi lúc mọi nơi với đội ngũ quản trị và các thành viên lão luyện, kinh nghiệm nhất
+   - Giúp bạn có thêm được nhiều kinh nghiệm, kiến thức thực chiến hiệu quả để dễ dàng chiến thắng 
+   - Giúp bạn tự do thể hiện tài năng của mình, giúp đỡ mọi người và giúp đỡ chính bạn
+   - Xây dựng mọi công cụ cần thiết dành cho bạn, bạn có ý tưởng, có phương pháp, đừng ngại góp ý nhé</value>
+  </data>
+</root>

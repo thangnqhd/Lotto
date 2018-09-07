@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\SINH TAI SINH LOC\SINHTAISINHLOC.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA6B5663-0A0F-4573-A5DF-22C21C6BA1AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SINHTAISINHLOC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>6.0.0.6</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Thống_kê_xổ_số</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>lib\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigTN">
+      <HintPath>lib\ConfigTN.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="TabLochoichieu">
+      <HintPath>lib\TabLochoichieu.dll</HintPath>
+    </Reference>
+    <Reference Include="myStruct">
+      <HintPath>lib\myStruct.dll</HintPath>
+    </Reference>
+    <Reference Include="Tulpep.NotificationWindow">
+      <HintPath>lib\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientSettings">
+      <HintPath>lib\ClientSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Emotion">
+      <HintPath>lib\Emotion.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Biendoiloto">
+      <HintPath>lib\Biendoiloto.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigClient">
+      <HintPath>lib\ConfigClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="THONGKEXOSO\FormUI\TabThamkhaoso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MobileCard\RequestInfo.cs" />
+    <Compile Include="MobileCard\ResponseInfo.cs" />
+    <Compile Include="MobileCard\NLCardLib.cs" />
+    <Compile Include="FDudoanketqua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="TabBacnhotheothu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabLoaiLoto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Annotations\CanBeNullAttribute.cs" />
+    <Compile Include="Annotations\NotNullAttribute.cs" />
+    <Compile Include="Annotations\StringFormatMethodAttribute.cs" />
+    <Compile Include="Annotations\InvokerParameterNameAttribute.cs" />
+    <Compile Include="Annotations\NotifyPropertyChangedInvocatorAttribute.cs" />
+    <Compile Include="Annotations\ContractAnnotationAttribute.cs" />
+    <Compile Include="Annotations\LocalizationRequiredAttribute.cs" />
+    <Compile Include="Annotations\CannotApplyEqualityOperatorAttribute.cs" />
+    <Compile Include="Annotations\BaseTypeRequiredAttribute.cs" />
+    <Compile Include="Annotations\UsedImplicitlyAttribute.cs" />
+    <Compile Include="Annotations\MeansImplicitUseAttribute.cs" />
+    <Compile Include="Annotations\ImplicitUseKindFlags.cs" />
+    <Compile Include="Annotations\ImplicitUseTargetFlags.cs" />
+    <Compile Include="Annotations\PublicAPIAttribute.cs" />
+    <Compile Include="Annotations\InstantHandleAttribute.cs" />
+    <Compile Include="Annotations\PureAttribute.cs" />
+    <Compile Include="Annotations\PathReferenceAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaMasterLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcMasterLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcActionAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaAttribute.cs" />
+    <Compile Include="Annotations\AspMvcControllerAttribute.cs" />
+    <Compile Include="Annotations\AspMvcMasterAttribute.cs" />
+    <Compile Include="Annotations\AspMvcModelTypeAttribute.cs" />
+    <Compile Include="Annotations\AspMvcPartialViewAttribute.cs" />
+    <Compile Include="Annotations\AspMvcSupressViewErrorAttribute.cs" />
+    <Compile Include="Annotations\AspMvcDisplayTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcEditorTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcViewAttribute.cs" />
+    <Compile Include="Annotations\AspMvcActionSelectorAttribute.cs" />
+    <Compile Include="Annotations\HtmlElementAttributesAttribute.cs" />
+    <Compile Include="Annotations\HtmlAttributeValueAttribute.cs" />
+    <Compile Include="Annotations\RazorSectionAttribute.cs" />
+    <Compile Include="FormUI\FChaomung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\AppInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\fChangePW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FChuki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FConfigBacNho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\fGopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FHienThiThongkeHieuQuaDauSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FKiemtraloxien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\fLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FLossPw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FLotoOffline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FPublicChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FThemNgaysudung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FThemXu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\fThongbao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\fTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\FVaotien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBacnhoCoban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBacNhoDanCungVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBacNhoLoXien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBacNhoTrungDauTrungDuoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBangdacbiet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBangvang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabBoxloto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabChukiloto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabChukygiaiDacBiet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabGepCau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabGepDanDacBiet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabHieuquadauso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabInfoUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabKetqua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabKinhnghiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabLoxien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\tabMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabNaptien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabNhandinhloto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabSoiCau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabSoicaugiaidacbiet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabSomo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabTanxuatcaploto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabTanxuatloto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabThamkhaocaothu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabThongkeCanhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabThongkedauso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabThongkenguhanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabTongQuanVeDe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabVaotienChukiDanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\TabXemChiTietCau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessLayer\DigestHttpWebRequest.cs" />
+    <Compile Include="BusinessLayer\FingerPrint.cs" />
+    <Compile Include="BusinessLayer\TbChaomung.cs" />
+    <Compile Include="BusinessLayer\tbDan.cs" />
+    <Compile Include="BusinessLayer\TbDuDoanLoTo.cs" />
+    <Compile Include="BusinessLayer\TbGioiThieu.cs" />
+    <Compile Include="BusinessLayer\TbLoaiLoto.cs" />
+    <Compile Include="BusinessLayer\TbLoxien.cs" />
+    <Compile Include="BusinessLayer\TBManager.cs" />
+    <Compile Include="BusinessLayer\TBNaptienhethong.cs" />
+    <Compile Include="BusinessLayer\TBNapTienTheNap.cs" />
+    <Compile Include="BusinessLayer\TBNhaMang.cs" />
+    <Compile Include="BusinessLayer\TBThanhToanNganHang.cs" />
+    <Compile Include="BusinessLayer\TbThongbao.cs" />
+    <Compile Include="BusinessLayer\TBVersion.cs" />
+    <Compile Include="BusinessLayer\TbVitri.cs" />
+    <Compile Include="BusinessLayer\Tbloto.cs" />
+    <Compile Include="BusinessLayer\tbConfigBacNho.cs" />
+    <Compile Include="BusinessLayer\TbLoOffline.cs" />
+    <Compile Include="BusinessLayer\tbChukidanh.cs" />
+    <Compile Include="BusinessLayer\tbSomo_Kinhnghiem.cs" />
+    <Compile Include="BusinessLayer\CssMessage.cs" />
+    <Compile Include="BusinessLayer\tbMessage.cs" />
+    <Compile Include="BusinessLayer\tbGopy.cs" />
+    <Compile Include="BusinessLayer\tbVangsudung.cs" />
+    <Compile Include="BusinessLayer\TbQuidoiVangNgaySuDung.cs" />
+    <Compile Include="BusinessLayer\TbHinhthucthanhtoan.cs" />
+    <Compile Include="BusinessLayer\tbConServerEmail.cs" />
+    <Compile Include="BusinessLayer\tbConfigApp.cs" />
+    <Compile Include="BusinessLayer\tbLogin.cs" />
+    <Compile Include="BusinessLayer\tbMoneyUSER.cs" />
+    <Compile Include="BusinessLayer\TbNgaysudung.cs" />
+    <Compile Include="BusinessLayer\tbXusudung.cs" />
+    <Compile Include="BusinessLayer\TbUser.cs" />
+    <Compile Include="BusinessLayer\ClMain.cs" />
+    <Compile Include="BusinessLayer\Tbketqua.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sent" />
+    <Resource Include="sent" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FDudoanketqua.resx" />
+    <EmbeddedResource Include="FMain.resx" />
+    <EmbeddedResource Include="FormUI\AppInfo.resx" />
+    <EmbeddedResource Include="FormUI\fChangePW.resx" />
+    <EmbeddedResource Include="FormUI\FChaomung.resx" />
+    <EmbeddedResource Include="FormUI\FChuki.resx" />
+    <EmbeddedResource Include="FormUI\FConfigBacNho.resx" />
+    <EmbeddedResource Include="FormUI\fGopy.resx" />
+    <EmbeddedResource Include="FormUI\FHienThiThongkeHieuQuaDauSo.resx" />
+    <EmbeddedResource Include="FormUI\FKiemtraloxien.resx" />
+    <EmbeddedResource Include="FormUI\fLoading.resx" />
+    <EmbeddedResource Include="FormUI\FLogin.resx" />
+    <EmbeddedResource Include="FormUI\FLossPw.resx" />
+    <EmbeddedResource Include="FormUI\FLotoOffline.resx" />
+    <EmbeddedResource Include="FormUI\FPublicChat.resx" />
+    <EmbeddedResource Include="FormUI\FSignup.resx" />
+    <EmbeddedResource Include="FormUI\FThemNgaysudung.resx" />
+    <EmbeddedResource Include="FormUI\FThemXu.resx" />
+    <EmbeddedResource Include="FormUI\fThongbao.resx" />
+    <EmbeddedResource Include="FormUI\fTransfer.resx" />
+    <EmbeddedResource Include="FormUI\FVaotien.resx" />
+    <EmbeddedResource Include="FormUI\TabBacnhoCoban.resx" />
+    <EmbeddedResource Include="FormUI\TabBacNhoDanCungVe.resx" />
+    <EmbeddedResource Include="FormUI\TabBacNhoLoXien.resx" />
+    <EmbeddedResource Include="FormUI\TabBacNhoTrungDauTrungDuoi.resx" />
+    <EmbeddedResource Include="FormUI\TabBangdacbiet.resx" />
+    <EmbeddedResource Include="FormUI\TabBangvang.resx" />
+    <EmbeddedResource Include="FormUI\TabBoxloto.resx" />
+    <EmbeddedResource Include="FormUI\TabChat.resx" />
+    <EmbeddedResource Include="FormUI\TabChukiloto.resx" />
+    <EmbeddedResource Include="FormUI\TabChukygiaiDacBiet.resx" />
+    <EmbeddedResource Include="FormUI\TabGepCau.resx" />
+    <EmbeddedResource Include="FormUI\TabGepDanDacBiet.resx" />
+    <EmbeddedResource Include="FormUI\TabHieuquadauso.resx" />
+    <EmbeddedResource Include="FormUI\TabInfoUser.resx" />
+    <EmbeddedResource Include="FormUI\TabKetqua.resx" />
+    <EmbeddedResource Include="FormUI\TabKinhnghiem.resx" />
+    <EmbeddedResource Include="FormUI\TabLoxien.resx" />
+    <EmbeddedResource Include="FormUI\tabMessage.resx" />
+    <EmbeddedResource Include="FormUI\TabNaptien.resx" />
+    <EmbeddedResource Include="FormUI\TabNhandinhloto.resx" />
+    <EmbeddedResource Include="FormUI\TabSoiCau.resx" />
+    <EmbeddedResource Include="FormUI\TabSoicaugiaidacbiet.resx" />
+    <EmbeddedResource Include="FormUI\TabSomo.resx" />
+    <EmbeddedResource Include="FormUI\TabTanxuatcaploto.resx" />
+    <EmbeddedResource Include="FormUI\TabTanxuatloto.resx" />
+    <EmbeddedResource Include="FormUI\TabThamkhaocaothu.resx" />
+    <EmbeddedResource Include="FormUI\TabThongkeCanhan.resx" />
+    <EmbeddedResource Include="FormUI\TabThongkedauso.resx" />
+    <EmbeddedResource Include="FormUI\TabThongkenguhanh.resx" />
+    <EmbeddedResource Include="FormUI\TabTongQuanVeDe.resx" />
+    <EmbeddedResource Include="FormUI\TabVaotienChukiDanh.resx" />
+    <EmbeddedResource Include="FormUI\TabXemChiTietCau.resx" />
+    <EmbeddedResource Include="obj\Debug\Thống_kê_xổ_số\fMain.resx" />
+    <EmbeddedResource Include="obj\Debug\Thống_kê_xổ_số\Properties\Resources.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="SINHTAISINHLOC\exe.licenses" />
+    <EmbeddedResource Include="TabBacnhotheothu.resx" />
+    <EmbeddedResource Include="TabLoaiLoto.resx" />
+    <EmbeddedResource Include="THONGKEXOSO\FormUI\TabThamkhaoso.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

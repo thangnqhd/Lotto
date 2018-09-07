@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Tham gia dự đoán để thể hiện tài năng của bạn và giúp đỡ mọi người, tham gia dự đoán tại Sinh Tài Sinh Lộc bạn không mất bất kỳ một khoản phí nào, và số tiền trúng thường cũng không có giá trị quy đổi ra tiền mặt hoặc hiện vật có giá trị khác .
+- Hàng tuần các bạn sẽ nhận được 90.000 bạc vào tài khoản để tham gia dự đoán
+- Kết thúc mỗi một tuần, những tài khoản đạt đủ điều kiện sẽ được xướng tên trên bảng vàng
+- Người chơi giỏi phải là người kiếm được tiền(có tỷ lệ lãi trên vốn cao) có phong độ ổn định giúp đỡ được nhiều người, bài viết có lượt xem, lượt bình luận lớn.
+- Những người yêu mến bạn, yêu mến cách chơi của bạn có thể ùng hộ bạn bằng "vàng".
+- Bài chốt số không thể chỉnh sửa sau 20:10 hàng ngày giờ hệ thống (18:10 giờ Việt Nam)
+-------------------------------------Tỷ lệ trả thưởng tại Sinh Tài Sinh Lộc ----------------------------------------
+- Tỷ lệ ăn lô 1 ăn 3.5
+- Tỷ lệ ăn đề 1 ăn 80
+- Tỷ lệ ăn lô xiên 2 (cả 2 con cùng về) 1 ăn 10
+- Tỷ lệ ăn lô xiên 3 (cả 3 con cùng về) 1 ăn 40
+- Tỷ lệ ăn lô xiên 4 (cả 4 con cùng về) 1 ăn 100
+- Tỷ lệ ăn lô trượt 8 con  (cả 8 con không về) 1 ăn 10
+- Tỷ lệ ăn lô trượt 10 con (cả 10 con không về) 1 ăn 15</value>
+  </data>
+  <data name="bunifuImageButton3.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>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</value>
+  </data>
+  <data name="btnXuly.BackgroundImage" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAoAIAAAKJUE5HDQoaCgAAAA1JSERSAAABGgAAACMIBgAAAEuxxWsAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACQklEQVR4Xu3dT0tUURzG8d6iJImiziISd0IbN+Ii3IQvQQjBcvyT5CJBygp0I5SCtYoIYZw7jI7QDSdLU3/Nc+51SOdc0Zl7dt8vfFZex93DzFzPzD0jIgocQ0NEwWNoiCh4DA0RBY+hIaLgMTREFLwbh+b07MI2dn/ZxIeaPV6pWuFlxbqe7wGA2wPtwvjagb37Xrf6yXm6HK1lDs129NsGFiPrm4+sa8b/hwBAtBP9C5G9+XaULsjVWoZGq/R0/dD9ku8BASCLdmN0dd9+HJ+li5J0ZWg0MkOvKtY9638QALiNR40d2a//TZfl2tDomQwjAyAPev/msubQ6D0ZXi4ByEvvXGTFndjtixsa3V3SG7++iwGgXYONJy/ln6fJ0OjWlLu75LkQANrV/WLPnn2Kk6HRfXDfRQDQqeHlSjI0D5f0j3illgsAoFP3Z8vJ0PQUy94LACAPbmh8PwCAvDA0AIJzQ6PXUL4fAkAe3NBwKhtASG5odAjK90MA6EzJ3dV2Q7PwObYHRf5hD0D+JjcOk6HRKUvOOQHIm3Zls3ScDI2a3ordISjfxQBwVzp+8OR9ze1Lc2h0sHLkddX7CwBwV4XFSvPjPZtDo3TKsuBOcXMcAUD7Bhs78qX6J12Wa0OjvtZO3Kfs9RT9DwAAWfTBeXom8//IqJahUXoZNfUx5g1iALczk3xA+djbA++3IXiH5jKtkm5N9TE4ADLoULa+kklfzZTVjUNDRJRHDA0RBY+hIaLgMTREFDyGhogCZ/YPZ7HzNLkqLNUAAAAASUVORK5CYIIL</value>
+  </data>
+</root>
