@@ -14,6 +14,7 @@ namespace BussinessCoreLibrary
     
     public partial class tblKetqua
     {
+        public System.DateTime NgayMoThuong { get; set; }
         public string G0 { get; set; }
         public string G1 { get; set; }
         public string G21 { get; set; }
@@ -41,9 +42,8 @@ namespace BussinessCoreLibrary
         public string G72 { get; set; }
         public string G73 { get; set; }
         public string G74 { get; set; }
+        public string UserId { get; set; }
         public System.DateTime CreateDate { get; set; }
         public System.DateTime UpdateDate { get; set; }
-        public System.DateTime NgayMoThuong { get; set; }
-        public string UserId { get; set; }
     }
 }

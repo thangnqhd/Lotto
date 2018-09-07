@@ -75,9 +75,9 @@
         </EntityContainer>
         <EntityType Name="tblKetqua">
           <Key>
-            <PropertyRef Name="CreateDate" />
             <PropertyRef Name="NgayMoThuong" />
           </Key>
+          <Property Name="NgayMoThuong" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="G0" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
           <Property Name="G1" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
           <Property Name="G21" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
@@ -105,10 +105,9 @@
           <Property Name="G72" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
           <Property Name="G73" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
           <Property Name="G74" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="NgayMoThuong" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -130,10 +129,9 @@
           <EntitySetMapping Name="tblKetquas">
             <EntityTypeMapping TypeName="LotodbModel.tblKetqua">
               <MappingFragment StoreEntitySet="tblKetqua">
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="NgayMoThuong" ColumnName="NgayMoThuong" />
                 <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="G74" ColumnName="G74" />
                 <ScalarProperty Name="G73" ColumnName="G73" />
                 <ScalarProperty Name="G72" ColumnName="G72" />
@@ -161,6 +159,7 @@
                 <ScalarProperty Name="G21" ColumnName="G21" />
                 <ScalarProperty Name="G1" ColumnName="G1" />
                 <ScalarProperty Name="G0" ColumnName="G0" />
+                <ScalarProperty Name="NgayMoThuong" ColumnName="NgayMoThuong" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
