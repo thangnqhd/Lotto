@@ -7,6 +7,7 @@
       <Diagram DiagramId="a607571832314201ba624dc7408c13b7" Name="Diagram1">
         <EntityTypeShape EntityType="LotodbModel.tblUser" Width="1.5" PointX="1.875" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LotodbModel.tblKetqua" Width="1.5" PointX="6.125" PointY="0.625" />
+        <EntityTypeShape EntityType="LotodbModel.tblConfigBacNho" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

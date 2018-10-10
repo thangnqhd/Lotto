@@ -27,5 +27,6 @@ namespace BussinessCoreLibrary
     
         public virtual DbSet<tblUser> tblUsers { get; set; }
         public virtual DbSet<tblKetqua> tblKetquas { get; set; }
+        public virtual DbSet<tblConfigBacNho> tblConfigBacNhoes { get; set; }
     }
 }

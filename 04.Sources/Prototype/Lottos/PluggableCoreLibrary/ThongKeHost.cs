@@ -19,5 +19,10 @@ namespace PluggableCoreLibrary
         {
             return _thongke.GetTenThongKe();
         }
+
+        public string HienThi()
+        {
+            return _thongke.HienThi();
+        }
     }
 }

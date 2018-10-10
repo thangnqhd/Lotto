@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessCoreLibrary", "Bus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoCoreLibrary", "LottoCoreLibrary\LottoCoreLibrary.csproj", "{D3C54995-4F40-47E0-9F41-6ABB5D43729D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThongKeDacBiet", "ThongKeDacBiet\ThongKeDacBiet.csproj", "{FDB4CF06-687B-4FFA-A180-29A3BBE8FDD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{D3C54995-4F40-47E0-9F41-6ABB5D43729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C54995-4F40-47E0-9F41-6ABB5D43729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C54995-4F40-47E0-9F41-6ABB5D43729D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB4CF06-687B-4FFA-A180-29A3BBE8FDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB4CF06-687B-4FFA-A180-29A3BBE8FDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB4CF06-687B-4FFA-A180-29A3BBE8FDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB4CF06-687B-4FFA-A180-29A3BBE8FDD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{4FC3BE17-0EC3-42DC-B03C-2C939E1512F0} = {AAA0B927-9A2F-4351-BB5A-AB5B4FBCA9A2}
 		{B5306F3F-38F1-483E-9083-CD63CE851A4C} = {AAA0B927-9A2F-4351-BB5A-AB5B4FBCA9A2}
 		{A07AF5B8-2847-4666-A0BB-9FB2A2CE2393} = {AAA0B927-9A2F-4351-BB5A-AB5B4FBCA9A2}
+		{FDB4CF06-687B-4FFA-A180-29A3BBE8FDD5} = {AAA0B927-9A2F-4351-BB5A-AB5B4FBCA9A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19C814FE-5C8B-409D-BE6A-0F847D519A79}

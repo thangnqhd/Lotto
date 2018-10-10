@@ -1,0 +1,5 @@
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINH TAI SINH LOC\obj\Debug\SINH TAI SINH LOC.csprojResolveAssemblyReference.cache
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINH TAI SINH LOC\obj\Debug\AutoUpdate.Form1.resources
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINH TAI SINH LOC\obj\Debug\AutoUpdate.Properties.Resources.resources
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINH TAI SINH LOC\obj\Debug\SINH TAI SINH LOC.csproj.GenerateResource.cache
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINH TAI SINH LOC\obj\Debug\SINH TAI SINH LOC.csproj.CoreCompileInputs.cache

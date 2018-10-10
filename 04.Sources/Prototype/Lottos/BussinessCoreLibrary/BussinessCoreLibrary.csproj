@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\KetQuaUtils.cs" />
+    <Compile Include="Common\MapHelper.cs" />
     <Compile Include="DBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -65,7 +67,12 @@
       <DependentUpon>DBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="KetQuaBL.cs" />
+    <Compile Include="Models\TblConfigBacNho.cs" />
+    <Compile Include="Models\TblKetQua.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblConfigBacNho.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="tblKetqua.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
@@ -82,7 +89,9 @@
     <None Include="DBModel.edmx.diagram">
       <DependentUpon>DBModel.edmx</DependentUpon>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -99,5 +108,6 @@
       <LastGenOutput>DBModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

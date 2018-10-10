@@ -12,6 +12,11 @@ namespace ThongKeBacNhoNgayCungVe
     [ThongKePlugInAttribute("Thong ke bac nho ngay cung ve")]
     public class BacNhoNgayCungVe : IThongKe
     {
+        public string HienThi()
+        {
+            return string.Empty;
+        }
+
         string IThongKe.GetTenThongKe()
         {
             return Constants.TK_BACNHO_NGAYCUNGVE;

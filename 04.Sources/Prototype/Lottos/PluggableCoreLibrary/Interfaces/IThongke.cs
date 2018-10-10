@@ -10,5 +10,6 @@ namespace PluggableCoreLibrary.Interfaces
     {
         void TinhToan();
         string GetTenThongKe();
+        string HienThi();
     }
 }

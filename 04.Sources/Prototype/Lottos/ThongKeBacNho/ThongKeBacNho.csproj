@@ -42,8 +42,13 @@
   <ItemGroup>
     <Compile Include="BacNho.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinhNgayVeLoCap.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BussinessCoreLibrary\BussinessCoreLibrary.csproj">
+      <Project>{3D9C9908-28D4-4C10-8595-AC7A88BBF476}</Project>
+      <Name>BussinessCoreLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PluggableCoreLibrary\PluggableCoreLibrary.csproj">
       <Project>{D7211B74-75AA-45B3-88E7-88591D732A6D}</Project>
       <Name>PluggableCoreLibrary</Name>

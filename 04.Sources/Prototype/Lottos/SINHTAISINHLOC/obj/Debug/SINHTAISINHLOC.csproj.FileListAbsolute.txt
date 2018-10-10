@@ -1,0 +1,2 @@
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINHTAISINHLOC\obj\Debug\SINHTAISINHLOC.csprojResolveAssemblyReference.cache
+D:\Projects\gits\Lottos\04.Sources\Prototype\Lottos\SINHTAISINHLOC\obj\Debug\SINHTAISINHLOC.g.resources

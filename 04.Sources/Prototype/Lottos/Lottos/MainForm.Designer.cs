@@ -30,6 +30,7 @@
         {
             this.mnuTools = new System.Windows.Forms.MenuStrip();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainWebrowser = new System.Windows.Forms.WebBrowser();
             this.mnuTools.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,11 +50,21 @@
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
+            // mainWebrowser
+            // 
+            this.mainWebrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainWebrowser.Location = new System.Drawing.Point(0, 24);
+            this.mainWebrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.mainWebrowser.Name = "mainWebrowser";
+            this.mainWebrowser.Size = new System.Drawing.Size(800, 426);
+            this.mainWebrowser.TabIndex = 1;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mainWebrowser);
             this.Controls.Add(this.mnuTools);
             this.DoubleBuffered = true;
             this.Name = "MainForm";
@@ -69,5 +80,6 @@
 
         private System.Windows.Forms.MenuStrip mnuTools;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.WebBrowser mainWebrowser;
     }
 }

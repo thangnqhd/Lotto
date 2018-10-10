@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using BussinessCoreLibrary;
+using BussinessCoreLibrary.Models;
 using HtmlAgilityPack;
 
 namespace SoKetQua
 {
     public class ParseWebData
     {
-        private string _siteUrl = "http://ketqua.net/xo-so-truyen-thong.php?ngay=";
         private const string Table_Result_Id = "result_tab_mb";
         private const string Td_Result_G0_Id = "rs_0_0";
         private const string Td_Result_G1_Id = "rs_1_0";
@@ -42,18 +44,45 @@ namespace SoKetQua
         private const string Td_Result_G7_3_Id = "rs_7_3";
         private const string Td_Nodes_Tags = "tbody/tr/td";
 
+        private string _siteUrl = "http://ketqua.net/xo-so-truyen-thong.php?ngay=";
+        private string _dateFormat = "dd'-'MM'-'yyyy";
+
+        private KetQuaBL _db = null;
         public ParseWebData(string url)
         {
-            _siteUrl = url;
-            //dummy
-            _siteUrl = "http://ketqua.net/xo-so-truyen-thong.php?ngay=04-09-2018";
+            //_siteUrl = url;
+            ////dummy
+            //_siteUrl = "http://ketqua.net/xo-so-truyen-thong.php?ngay=04-09-2018";
+            _db = new KetQuaBL();
         }
-        public void Parsing()
+
+        public void ImportKetQuaData()
+        {
+            // This iterates through a range between two DateTimes 
+            // with the given iterator (any of the Add methods) 
+
+            DateTime start = _db.GetMaxDateTime();
+            if (start == null)
+            {
+                return;
+            }
+            var tmpDate = DateTime.Now;
+            DateTime until = tmpDate.AddDays(-1);
+
+            // NOTICE: As the add methods return a new DateTime you have
+            // to overwrite dt in the iterator like dt = dt.Add()
+            for (DateTime dt = start; dt < until; dt = dt.AddDays(1))
+            {
+                Parsing(dt);
+            }
+        }
+        private void Parsing(DateTime date)
         {
             string HTML = string.Empty;
+            string siteUrl = _siteUrl + date.ToString(_dateFormat);
             using (var wc = new WebClient())
             {
-                HTML = wc.DownloadString(_siteUrl);
+                HTML = wc.DownloadString(siteUrl);
                 Console.WriteLine(HTML);
             }
             var doc = new HtmlDocument();
@@ -61,12 +90,21 @@ namespace SoKetQua
 
             //Find result lotto table
             var table = doc.GetElementbyId(Table_Result_Id);
+            if (table == null)
+            {
+                return;
+            }
             var ketqua = GeTblKetqua(table);
+            ketqua.NgayMoThuong = date;
+            ketqua.UserId = "thangnqhd";
+
+            //Insert data to DB
+            _db.Insert(ketqua);
         }
 
-        private tblKetqua GeTblKetqua(HtmlNode table)
+        private TblKetQua GeTblKetqua(HtmlNode table)
         {
-            tblKetqua ketqua = new tblKetqua();
+            TblKetQua ketqua = new TblKetQua();
 
             //Get all cell
             var cells = table.SelectNodes(Td_Nodes_Tags);
@@ -106,6 +144,8 @@ namespace SoKetQua
             ketqua.G73 = GetCellValue(cells, Td_Result_G7_2_Id);
             ketqua.G74 = GetCellValue(cells, Td_Result_G7_3_Id);
 
+            ketqua.CreateDate = DateTime.Now;
+            ketqua.UpdateDate = DateTime.Now;
             return ketqua;
         }
 
@@ -115,11 +155,12 @@ namespace SoKetQua
             {
                 if (cell.Id == idCell)
                 {
-                    return cell.InnerText;
+                    return cell.InnerText.Contains("&nbsp;") ? "^^" : cell.InnerText;
                 }
             }
 
             return string.Empty;
         }
+
     }
 }
